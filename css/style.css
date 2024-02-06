@@ -1,0 +1,364 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+
+:root{
+    --main-color:#e0bc75;
+    --black:#13131a;
+    --bg:#ffffff;
+    --border:.1rem solid rgba(255,255,255,.3);
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body{
+    background: var(--bg);
+}
+
+section{
+    padding:5rem 7%;
+}
+
+.heading{
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span{
+    color:var(--main-color);
+    text-transform: uppercase;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--main-color);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn:hover{
+    letter-spacing: .2rem;
+}
+
+.header{
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1rem 7%;
+    border-bottom: 1px solid var(--main-color);
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+}
+
+.header .logo img{
+    height: 5rem;
+}
+
+.header.header-scrolled{
+    background: linear-gradient(to right, #fff, #fff, #e0bc75);
+    border-bottom: 1px solid #e0bc75;
+}
+
+.header-scrolled .btn.header-button {
+    background: #fff;
+    color: var(--main-color);
+}
+
+.header .icons div{
+    color:#fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+
+.header .icons div:hover{
+    color:var(--main-color);
+}
+
+.home{
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+    background:url(../images/banner-bg2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    text-align: center;
+}
+.home .content {
+    padding: 88px 0 0 0;
+}
+
+.home .content h3{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color:#fff;
+}
+
+.home .content p{
+    font-size: 2rem;
+    line-height: 1.8;
+    padding:1rem 0;
+    color: #fff;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about .row .image{
+    flex: 1 1 19rem;
+    display: flex;
+    justify-content: center;
+}
+
+.about .row .content{
+    flex:1 1 45rem;
+    padding:2rem;
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color:#000;
+    opacity: 0.8;
+}
+
+.about .row .content p{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 2rem;
+    padding: 1.5rem 0;
+}
+
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+    background: #fff;
+    border: 1px solid #000;
+}
+
+.contact .row .map{
+    flex:1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact .row .contact-info h3 {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: #c8a479;
+    padding: 0 0 2rem 0;
+}
+.contact .row .contact-info {
+    flex: 1 1 45rem;
+    padding: 5rem 2rem 5rem 8rem;
+}
+.contact .row .contact-info {
+    flex: 1 1 45rem;
+    padding: 5rem 2rem 5rem 8rem;
+}
+.contact-info i.fa {
+    color: #000;
+    font-size: 2rem;
+    padding: 1rem 2rem 1rem 0;
+}
+.contact-info .address {
+    color: #000;
+    font-size: 2.5rem;
+    padding: 0 0 2.5rem 0;
+}
+.contact-info .address p {
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+.contact-info i.fa {
+    color: var(--main-color);
+    font-size: 2rem;
+    padding: 1rem 2rem 1rem 0;
+}
+.call-info p a {
+    color: #000;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    text-transform: none;
+}
+.call-info {
+    padding: 0 0 2.5rem 0;
+}
+
+.footer{
+    background:#fff;
+    text-align: center;
+    padding: 1rem 7%;
+}
+
+.share{
+    padding:1rem 0 2rem 0;
+}
+
+.share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color:var(--main-color);
+    border:1px solid var(--main-color);
+    margin:.3rem;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:2rem 0;
+    gap:1rem;
+}
+
+.links a{
+    padding:.7rem 2rem;
+    color:#000;
+    border:var(--border);
+    font-size: 2rem;
+}
+
+.links a:hover{
+    background:var(--main-color);
+}
+
+.footer .credit{
+    font-size: 2rem;
+    color:#000;
+    padding:1.5rem;
+}
+
+.footer .credit span{
+    color:var(--main-color);
+}
+
+
+/* Form */
+section.form-section {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 10rem 7% 5rem 7%;
+}
+form#enquiryForm {
+    border: 1px solid var(--main-color);
+    padding: 50px;
+    border-radius: 25px;
+}
+.form-fields{
+    padding: 0.5rem 0;
+}
+.form-fields label {
+    font-size: 2rem;
+    font-weight: 700;
+}
+.form-fields input, .form-fields textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid var(--main-color);
+    margin: 10px 0;
+    font-size: 1.8rem;
+}
+
+/* media queries  */
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding:1.5rem 1rem;
+    }
+
+    .header .logo img {
+        height: 5rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+    .about .row .image img {
+        max-width: 100%;
+    }
+    .contact .row .contact-info {
+        padding: 5rem 2rem 5rem 2rem;
+    }
+    section.form-section {
+        max-width: 92%;
+        padding: 10rem 0 5rem 0;
+    }
+    form#enquiryForm {
+        padding: 25px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .home{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home .content h3{
+        font-size: 4.5rem;
+    }
+
+    .home .content p{
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+}

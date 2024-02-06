@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Construction, Builders, Building">
+    <meta name="description" content="You dream it, we bild it">
+    <title>Satyam Construction</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body class="quote-page">
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="logo">
+    </a>
+
+    <a href="quote.html" class="btn header-button">Get a Quote</a>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- form section -->
+<section class="form-section">
+    <h1 class="heading"> <span>Enquiry</span></h1>
+
+   <form id="enquiryForm" onsubmit="sendEmail(); reset(); return false" >
+      <div class="form-fields">
+         <label>Full Name</label>
+         <div>
+            <input type="text" name="username" id="name" placeholder="Enter Your Name" required="required">
+         </div>
+      </div>
+      <br>
+      <div class="form-fields">
+         <label>Email address</label>
+         <div>
+            <input type="email" name="email" id="email" placeholder="Enter your email address" required="required">
+         </div>
+      </div>
+      <br>
+      <div class="form-fields">
+        <label>Phone Number</label>
+        <div>
+           <input type="tel" id="phone" name="phone" placeholder="Enter Your Phone Number" required="required">
+        </div>
+     </div>
+     <br>
+     <div class="form-fields">
+        <label>Location of Site</label>
+        <div>
+           <input type="text" name="text" placeholder="Enter Location" required="required">
+        </div>
+     </div>
+     <br>
+      <div class="form-fields">
+         <label>Message</label>
+         <div>
+            <textarea type="text" name="message" id="message" placeholder="Enter your message" required="required"></textarea>
+         </div>
+      </div>
+      <br>
+      <button type="submit" class="btn">SUBMIT</button>
+   </form>
+
+</section>
+
+<!-- form section -->
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="credit">created by <span>Techunifi</span> | all rights reserved</div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
