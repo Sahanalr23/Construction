@@ -1,0 +1,111 @@
+<!-- connect with php file -->
+<?php include 'mail.php'  ?>
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Satyam Construction</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header class="header">
+
+  <a href="index.html" class="logo">
+      <img src="images/logo.webp" alt="logo">
+  </a>
+  
+  <div class="email-quote-header">
+      <p class="email"><i class="fa fa-envelope"></i><a href="mailto:info@satyam.construction">info@satyam.construction</a></p>
+      <a href="form.html" class="btn header-button">Get a Quote</a>
+  </div>
+
+
+</header>
+
+<!-- header section ends -->
+
+
+<!-- form section -->
+  <section class="form-section">
+    <h1 class="heading"> <span>Inquiry</span></h1>
+
+   <div class="container">  
+    <form id="contact" action="" method="post">
+      <div class="row">
+   
+        <div class="col">
+
+          <div class="form-fields">
+            <label>Full Name</label>
+            <div>
+              <input placeholder="First Name" name="firstName" type="text" tabindex="1" required autofocus>
+            </div>
+         </div>
+
+         <div class="form-fields">
+          <label>Email</label>
+          <div>
+            <input placeholder="Your Email Address" name="email" type="email" tabindex="2" required>
+          </div>
+       </div>
+
+       <div class="form-fields">
+        <label>Phone Number</label>
+        <div>
+          <input placeholder="Your Phone Number" name="tel" type="tel" tabindex="3" required>
+        </div>
+      </div>
+
+      <div class="form-fields">
+        <label>Location of site</label>
+        <div>
+          <input type="text" name="location" placeholder="Location of site" tabindex="5" required>
+        </div>
+      </div>
+
+      <div class="form-fields">
+        <label>Message</label>
+        <div>
+          <textarea type="text" name="message" id="message" placeholder="Enter your message" required="required"></textarea>
+        </div>
+      </div>
+
+        </div>
+
+     </div>
+          
+        <!-- Error display -->
+        <div>
+         <p class="success"> <?php echo $success;  ?> </p>
+         <p class="failed"> <?php echo $failed;  ?> </p>
+        </div>
+       
+      <fieldset>
+        <button type="submit" class="btn" name="submit" id="contact-submit" data-submit="...Sending">Submit Now</button>
+      </fieldset>
+    </form>
+  </div>
+
+</section>
+<!-- form section -->
+
+
+<!-- footer section starts  -->
+<section class="footer">
+
+  <div class="credit">created by <span>Techunifi</span> | all rights reserved</div>
+
+</section>
+<!-- footer section ends -->
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+ 
+</body>
+</html>

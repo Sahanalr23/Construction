@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
 
 :root{
-    --main-color:#e0bc75;
+    --main-color: rgba(0, 0, 78, 1);
     --black:#13131a;
     --bg:#ffffff;
     --border:.1rem solid rgba(255,255,255,.3);
@@ -43,6 +43,10 @@ body{
 
 section{
     padding:5rem 7%;
+}
+
+section.about {
+    padding: 6rem 7% 5rem;
 }
 
 .heading{
@@ -87,16 +91,37 @@ section{
 
 .header .logo img{
     height: 5rem;
+    filter: sepia(100%) hue-rotate(190deg) saturate(500%);
+}
+
+.email-quote-header{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    gap: 46px;
+}
+
+.email-quote-header .email a {
+    font-size: 1.5rem;
+    color: var(--main-color);
+    font-weight: 700;
+    text-transform: none;
+}
+
+.email-quote-header .email i {
+    color: var(--main-color);
+    font-size: 1.5rem;
+    padding: 0 10px 0 0;
 }
 
 .header.header-scrolled{
-    background: linear-gradient(to right, #fff, #fff, #e0bc75);
-    border-bottom: 1px solid #e0bc75;
+    /* background: linear-gradient(to right, #fff, #fff,  rgba(0, 0, 78, 1)); */
+    border-bottom: 1px solid rgba(0, 0, 78, 1);
 }
 
 .header-scrolled .btn.header-button {
-    background: #fff;
-    color: var(--main-color);
+    color: #fff;
+    background: var(--main-color);
 }
 
 .header .icons div{
@@ -114,7 +139,7 @@ section{
     min-height: 65vh;
     display: flex;
     align-items: center;
-    background:url(../images/banner-bg2.jpg) no-repeat;
+    background:url(../images/banner-bg.webp) no-repeat;
     background-size: cover;
     background-position: center;
     justify-content: center;
@@ -143,8 +168,12 @@ section{
     flex-wrap: wrap;
 }
 
+section.about .heading {
+    padding: 0 0 7rem 0;
+}
+
 .about .row .image{
-    flex: 1 1 19rem;
+    flex: 1 1 45rem;
     display: flex;
     justify-content: center;
 }
@@ -164,8 +193,33 @@ section{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 1.5rem 0;
+}
+
+.about .services h4 {
+    font-size: 2.4rem;
+    padding: 3rem 0 0 0;
+    opacity: 0.8;
+}
+
+.services ul {
+    padding: 1.5rem 0 0 0;
+}
+
+.about .services ul li::marker {
+    font-size: 0;
+}
+
+.about .services ul li {
+    font-size: 1.8rem;
+    padding: 1rem 0;
+}
+
+.about .services ul li i.fa-arrow-right {
+    color: rgba(0, 0, 78, 1);
+    font-size: 1.6rem;
+    padding: 0 0.8rem 0 0;
 }
 
 .contact .row{
@@ -201,7 +255,7 @@ section{
     font-size: 2rem;
     padding: 1rem 2rem 1rem 0;
 }
-.contact-info .address {
+/* .contact-info .address {
     color: #000;
     font-size: 2.5rem;
     padding: 0 0 2.5rem 0;
@@ -209,7 +263,7 @@ section{
 .contact-info .address p {
     font-size: 1.8rem;
     line-height: 1.5;
-}
+} */
 .contact-info i.fa {
     color: var(--main-color);
     font-size: 2rem;
@@ -283,7 +337,7 @@ section.form-section {
     margin: 0 auto;
     padding: 10rem 7% 5rem 7%;
 }
-form#enquiryForm {
+.form-section form {
     border: 1px solid var(--main-color);
     padding: 50px;
     border-radius: 25px;
@@ -317,7 +371,9 @@ form#enquiryForm {
     .header .logo img {
         height: 5rem;
     }
-
+    .email-quote-header {
+        display: unset;
+    }
     section{
         padding:2rem;
     }
@@ -331,7 +387,7 @@ form#enquiryForm {
         max-width: 92%;
         padding: 10rem 0 5rem 0;
     }
-    form#enquiryForm {
+    .form-section form {
         padding: 25px;
     }
 
@@ -353,6 +409,21 @@ form#enquiryForm {
         font-size: 1.5rem;
     }
 
+    section.about .heading {
+        padding: 0 0 3.5rem 0;
+    }
+    .about .services ul li {
+        font-size: 1.8rem;
+        padding: 1rem 0;
+        list-style-type: disc;
+        list-style-position: inside;
+        text-indent: -1.2rem;
+        padding-left: 1.9rem;
+    }
+    section.about {
+        padding: 4rem 7% 0.4rem;
+    }
+
 }
 
 @media (max-width:450px){
@@ -360,5 +431,19 @@ form#enquiryForm {
     html{
         font-size: 50%;
     }
+
+}
+
+@media screen and (min-width:768px) and (max-width: 991px){
+
+   section.about .heading {
+     padding: 0 0 3rem 0;
+   }
+
+  .about .row .content {
+     flex: 1 1 45rem;
+     padding: 3rem 5rem;
+  }
+
 
 }
